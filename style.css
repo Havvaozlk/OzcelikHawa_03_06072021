@@ -1,0 +1,11 @@
+header {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+headerimg {
+  width: 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */
