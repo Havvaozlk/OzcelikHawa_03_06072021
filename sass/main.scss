@@ -17,3 +17,32 @@
 @import "./pages/work";
 @import "./pages/about";
 @import "./pages/project";
+
+.localisation {
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    color: $grisfoncé;
+    font-weight: bold;
+    box-shadow: inset 0px 2px 2px $background;
+    i.fas.fa-map-marker-alt {
+     display: flex;
+     align-items: center;
+     padding: 0 1rem 0.1rem 0;   
+    }
+}
+
+.section-explorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $grisclair;
+    h1 {
+        margin: 3rem 3rem 1.5rem 3rem;
+    }
+    p {
+        margin: 0 2rem 2rem 2rem;
+        font-size: 1.2em;
+
+    }
+}

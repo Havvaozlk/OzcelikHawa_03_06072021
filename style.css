@@ -1,11 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+
 header {
   width: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 1.5rem 0 0.5rem 0;
 }
-headerimg {
+header img {
   width: 10rem;
+}
+
+.localisation {
+  background-color: #aba9a936;
+  display: flex;
+  justify-content: center;
+  color: #333232db;
+  font-weight: bold;
+  box-shadow: inset 0px 2px 2px #aba9a936;
+}
+.localisation i.fas.fa-map-marker-alt {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0.1rem 0;
+}
+
+.section-explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #aba9a90f;
+}
+.section-explorer h1 {
+  margin: 3rem 3rem 1.5rem 3rem;
+}
+.section-explorer p {
+  margin: 0 2rem 2rem 2rem;
+  font-size: 1.2em;
 }
 
 /*# sourceMappingURL=style.css.map */
