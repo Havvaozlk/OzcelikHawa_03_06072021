@@ -74,7 +74,7 @@
         div {
             border-radius: 22px;
             background-color: $grisclair;
-            width: 24rem;
+            width: 22rem;
             height: 4rem;
             display: flex;
             justify-content: center;
@@ -82,16 +82,21 @@
             margin-bottom: 2rem;
             box-shadow: .25rem .25rem 10px $ombres;
             position: relative;
+            &:hover {
+                background-color:#9356dc30;
+            }
+            &:hover .icon {
+                color: $violet;
+            } 
 
-            .fas.fa-mobile-alt,.fas.fa-list-ul,.fas.fa-store {
+            .icon {
                 margin-right: 1rem;
                 color: $grisfoncé;
-                &:hover {
-                    color: $violet;
-                }
-            }
+             }
+            
+                
 
-            div {
+            .section-menu__numero {
                 width: 1.3rem;
                 height: 1.3rem;
                 position: absolute;
@@ -102,10 +107,11 @@
                 font-size: small;
             }
         }
-        }
+        
 
 
     }
+}
  .section-restaurants {
     display: flex;
     flex-direction: column;
@@ -132,11 +138,21 @@
             margin-bottom: 1rem;
             box-shadow: .25rem .25rem 10px $ombres;
             border-radius: 17px 17px 17px 17px;
+            position: relative;
             
             a {
                 color: black;
                 text-decoration: none;
                 background-color: white;
+                span {
+                    position: absolute;
+                    right: 1rem;
+                    top: 1rem;
+                    background-color: #99E2D0;
+                    padding: 0.3rem;
+                    color: #265549;
+                    border-radius: 4px;
+                }
                 div {
                     height: 5rem;
                     position: relative;
@@ -155,7 +171,16 @@
                         position: absolute;
                         right: 1.5rem;
                         top: 1rem;
+                        .coeur1 {
+                            position: relative;
+                        }
+                        .coeur2 {
+                            position: absolute;
+                            right: 0.5rem;
+                            display: none; 
+                        }
                     }
+                    
                 }
             }
         }
@@ -169,6 +194,7 @@ footer {
         color: white;
         margin-left: 2.4rem;
         font-size: larger;
+        font-family: 'shrikhandregular';
     }
     ul {
         list-style-type: none;
@@ -190,4 +216,3 @@ footer {
         
     }
 }
-

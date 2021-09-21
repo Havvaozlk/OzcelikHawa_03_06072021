@@ -1,11 +1,17 @@
 @font-face {
-  font-family: "robotoblack";
-  src: url("/sass/font/roboto-black.woff2") format("woff2"), url("/sass/font/roboto-black.woff") format("woff");
+  font-family: "shrikhandregular";
+  src: url("sass/font/shrikhand-regular-webfont.woff2") format("woff2"), url("sass/font/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("sass/font/roboto-light.woff2") format("woff2"), url("sass/font/roboto-light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  font-family: "robotoblack", sans-serif;
+  font-family: "roboto", sans-serif;
   margin: 0;
 }
 
@@ -15,8 +21,10 @@ header {
   justify-content: center;
   margin: 1.5rem 0 0.5rem 0;
 }
-header img {
+header h1 {
   width: 10rem;
+  font-family: "shrikhandregular";
+  margin: 0;
 }
 
 .localisation {
@@ -73,7 +81,7 @@ header img {
 .section-menu div div {
   border-radius: 22px;
   background-color: #80797912;
-  width: 24rem;
+  width: 22rem;
   height: 4rem;
   display: flex;
   justify-content: center;
@@ -82,14 +90,17 @@ header img {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   position: relative;
 }
-.section-menu div div .fas.fa-mobile-alt, .section-menu div div .fas.fa-list-ul, .section-menu div div .fas.fa-store {
+.section-menu div div:hover {
+  background-color: #9356dc30;
+}
+.section-menu div div:hover .icon {
+  color: #9356DC;
+}
+.section-menu div div .icon {
   margin-right: 1rem;
   color: #333232db;
 }
-.section-menu div div .fas.fa-mobile-alt:hover, .section-menu div div .fas.fa-list-ul:hover, .section-menu div div .fas.fa-store:hover {
-  color: #9356DC;
-}
-.section-menu div div div {
+.section-menu div div .section-menu__numero {
   width: 1.3rem;
   height: 1.3rem;
   position: absolute;
@@ -128,11 +139,21 @@ header img {
   margin-bottom: 1rem;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   border-radius: 17px 17px 17px 17px;
+  position: relative;
 }
 .section-restaurants div article a {
   color: black;
   text-decoration: none;
   background-color: white;
+}
+.section-restaurants div article a span {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #99E2D0;
+  padding: 0.3rem;
+  color: #265549;
+  border-radius: 4px;
 }
 .section-restaurants div article a div {
   height: 5rem;
@@ -154,6 +175,14 @@ header img {
   right: 1.5rem;
   top: 1rem;
 }
+.section-restaurants div article a div .section-restaurants__coeur .coeur1 {
+  position: relative;
+}
+.section-restaurants div article a div .section-restaurants__coeur .coeur2 {
+  position: absolute;
+  right: 0.5rem;
+  display: none;
+}
 
 footer {
   background-color: #333232db;
@@ -163,6 +192,7 @@ footer h1 {
   color: white;
   margin-left: 2.4rem;
   font-size: larger;
+  font-family: "shrikhandregular";
 }
 footer ul {
   list-style-type: none;

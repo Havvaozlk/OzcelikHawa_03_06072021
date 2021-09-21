@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div><img src="public/logo/ohmyfood.png" alt="logo"/></div>
+        <h1>ohmyfood</h1>
     </header>
     <main>
     <section class="localisation">
@@ -26,10 +26,10 @@
     <section class="section-menu">
         <h1>Fonctionnement</h1>
         <div>
-            <div><i class="fas fa-mobile-alt"></i>Choisissez un restaurant
-            <div>1</div></div>
-            <div><i class="fas fa-list-ul"></i> Composez votre menu <div>2</div></div>
-            <div><i class="fas fa-store"></i> Dégustez au restaurant <div>3</div></div>
+            <div><i class="fas fa-mobile-alt icon"></i>Choisissez un restaurant
+            <div class="section-menu__numero">1</div></div>
+            <div><i class="fas fa-list-ul icon"></i> Composez votre menu <div class="section-menu__numero">2</div></div>
+            <div><i class="fas fa-store icon"></i> Dégustez au restaurant <div class="section-menu__numero">3</div></div>
         </div>
     </section>
     <section class="section-restaurants">
@@ -38,15 +38,19 @@
             <article>
             <a href="#">
             <img src="public/restaurants/lapalettedugout.jpg"/>
+            <span>Nouveau</span>
             <div><h2>La palette du goût</h2>
                  <p>Ménilmontant</p>
-                 <div class="section-restaurants__coeur"><i class="far fa-heart"></i></div>
+                 <div class="section-restaurants__coeur"><i class="coeur1 far fa-heart"></i>
+                 <i class="coeur2 fas fa-heart"></i>
+                 </div>
             </div>
         </a>
             </article>  
             <article>
         <a href="#">
             <img src="public/restaurants/lanoteenchantée.jpg"/>
+            <span>Nouveau</span>
             <div>
                 <h2>La note enchantée</h2>
                 <p>Charonne</p>
@@ -57,6 +61,7 @@
         <article>
         <a href="#">
                 <img src="public/restaurants/alafrancaise.jpg"/>
+                <span>Nouveau</span>
                 <div>
                     <h2>A la française</h2>
                     <p>Cité Rouge</p>
@@ -67,6 +72,7 @@
         <article>
         <a href="#">
             <img src="public/restaurants/ledelicedessens.jpg"/>
+            <span>Nouveau</span>
             <div>
                 <h2>Le délice des sens</h2>
                 <p>Folie-Méricourt</p>
