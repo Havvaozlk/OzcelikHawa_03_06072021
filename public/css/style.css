@@ -1,6 +1,6 @@
 @font-face {
   font-family: "shrikhandregular";
-  src: url("sass/font/shrikhand-regular-webfont.woff2") format("woff2"), url("sass/font/shrikhand-regular-webfont.woff") format("woff");
+  src: url("/public/font/shrikhand-regular-webfont.woff2") format("woff2"), url("/public/font/shrikhand-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,6 +25,10 @@ header h1 {
   width: 10rem;
   font-family: "shrikhandregular";
   margin: 0;
+}
+header h1 a {
+  text-decoration: none;
+  color: black;
 }
 
 .localisation {
@@ -77,6 +81,17 @@ header h1 {
   flex-wrap: wrap;
   justify-content: center;
   font-weight: bold;
+  flex-direction: column;
+}
+@media all and (min-width: 704px) and (max-width: 1100px) {
+  .section-menu div {
+    flex-direction: initial;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .section-menu div {
+    flex-direction: initial;
+  }
 }
 .section-menu div div {
   border-radius: 22px;
@@ -89,6 +104,20 @@ header h1 {
   margin-bottom: 2rem;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   position: relative;
+  flex-direction: initial;
+  cursor: pointer;
+}
+@media all and (min-width: 704px) and (max-width: 1100px) {
+  .section-menu div div {
+    width: 20rem;
+    margin-right: 1.5rem;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .section-menu div div {
+    width: 20rem;
+    margin-right: 1.5rem;
+  }
 }
 .section-menu div div:hover {
   background-color: #9356dc30;
@@ -129,10 +158,17 @@ header h1 {
   width: 100%;
   overflow-x: auto;
 }
+@media all and (min-width: 701px) {
+  .section-restaurants div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .section-restaurants div img {
   width: 100%;
   height: 12rem;
   border-radius: 17px 17px 0 0;
+  object-fit: cover;
 }
 .section-restaurants div article {
   background-color: white;
@@ -140,6 +176,11 @@ header h1 {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
   border-radius: 17px 17px 17px 17px;
   position: relative;
+}
+@media all and (min-width: 701px) {
+  .section-restaurants div article {
+    width: 48%;
+  }
 }
 .section-restaurants div article a {
   color: black;
@@ -158,6 +199,11 @@ header h1 {
 .section-restaurants div article a div {
   height: 5rem;
   position: relative;
+}
+@media all and (min-width: 701px) {
+  .section-restaurants div article a div {
+    flex-direction: column;
+  }
 }
 .section-restaurants div article a div h2 {
   margin: 1rem 0 0.3rem 1rem;
@@ -178,10 +224,45 @@ header h1 {
 .section-restaurants div article a div .section-restaurants__coeur .coeur1 {
   position: relative;
 }
+.section-restaurants div article a div .section-restaurants__coeur .coeur1:hover {
+  display: none;
+}
 .section-restaurants div article a div .section-restaurants__coeur .coeur2 {
   position: absolute;
   right: 0.5rem;
   display: none;
+}
+.section-restaurants div article a div .section-restaurants__coeur .coeur2:hover {
+  display: block;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-restaurants div .section-restaurants__coeur {
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+}
+.section-restaurants div .section-restaurants__coeur .coeur1 {
+  position: relative;
+}
+.section-restaurants div .section-restaurants__coeur .coeur2 {
+  position: absolute;
+  right: 0.5rem;
+  display: none;
+}
+@media all and (min-width: 701px) {
+  .section-restaurants div .one {
+    margin-right: 1rem;
+  }
+}
+@media all and (min-width: 701px) {
+  .section-restaurants div .three {
+    margin-right: 1rem;
+  }
 }
 
 footer {

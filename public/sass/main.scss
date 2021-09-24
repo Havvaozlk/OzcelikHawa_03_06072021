@@ -1,0 +1,23 @@
+@import "Utils/_variables.scss";
+@import "Utils/_functions.scss";
+@import "Utils/_mixins.scss";
+@import "Utils/_extensions.scss";
+
+@import "Base/_base.scss";
+@import "Base/_typography.scss";
+
+@import "Components/_buttons.scss";
+
+@import "Layout/_header.scss";
+@import "Layout/_nav.scss";
+@import "Layout/_container.scss";
+@import "Layout/_form.scss";
+
+@import "Pages/_page1.scss";
+@import "Pages/page2.scss";
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";
+
+
+

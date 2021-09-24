@@ -1,24 +1,3 @@
-@import "Utils/_variables.scss";
-@import "Utils/_functions.scss";
-@import "Utils/_mixins.scss";
-@import "Utils/_extensions.scss";
-
-@import "Base/_base.scss";
-@import "Base/_typography.scss";
-
-@import "Components/_buttons.scss";
-
-@import "Layout/_header.scss";
-@import "Layout/_nav.scss";
-@import "Layout/_container.scss";
-@import "Layout/_form.scss";
-
-
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
-
-
 .localisation {
     background-color: $background;
     display: flex;
@@ -71,6 +50,13 @@
         flex-wrap: wrap;
         justify-content: center;
         font-weight: bold;
+        flex-direction: column;
+        @include version-tablette{
+            flex-direction: initial;
+        }
+        @include version-desktop{
+            flex-direction: initial;
+        }
         div {
             border-radius: 22px;
             background-color: $grisclair;
@@ -82,6 +68,16 @@
             margin-bottom: 2rem;
             box-shadow: .25rem .25rem 10px $ombres;
             position: relative;
+            flex-direction: initial;
+            cursor: pointer;
+            @include version-tablette{
+                width: 20rem;
+                margin-right: 1.5rem;
+            }
+            @include version-desktop{
+                width: 20rem;
+                margin-right: 1.5rem;
+            }
             &:hover {
                 background-color:#9356dc30;
             }
@@ -128,10 +124,15 @@
     div {
         width: 100%;
         overflow-x: auto;
+        @include tablette-desktop {
+            display: flex;
+            flex-wrap: wrap;
+        }
         img {
             width: 100%;
             height: 12rem;
             border-radius: 17px 17px 0 0;
+            object-fit: cover;
         }
         article {
             background-color: white;
@@ -139,6 +140,9 @@
             box-shadow: .25rem .25rem 10px $ombres;
             border-radius: 17px 17px 17px 17px;
             position: relative;
+            @include tablette-desktop {
+                width: 48%;
+            }
             
             a {
                 color: black;
@@ -153,9 +157,13 @@
                     color: #265549;
                     border-radius: 4px;
                 }
+                
                 div {
                     height: 5rem;
                     position: relative;
+                    @include tablette-desktop {
+                        flex-direction: column;
+                    }
                     h2 {
                         margin: 1rem 0 0.3rem 1rem;
                         font-size: 1.3em;
@@ -173,15 +181,51 @@
                         top: 1rem;
                         .coeur1 {
                             position: relative;
+                            &:hover {
+                                display: none;
+                            }
                         }
                         .coeur2 {
                             position: absolute;
                             right: 0.5rem;
                             display: none; 
+                            &:hover{
+                                display: block;
+                                background: linear-gradient(#FF79DA, #9356DC);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
                         }
                     }
                     
                 }
+            }
+        }
+        .section-restaurants__coeur {
+            height: 2rem;
+            width: 2rem;
+            font-size: 1.5rem;
+            position: absolute;
+            right: 1.5rem;
+            top: 1rem;
+            .coeur1 {
+                position: relative;
+            }
+            .coeur2 {
+                position: absolute;
+                right: 0.5rem;
+                display: none; 
+            }
+        }
+        .one {
+            @include tablette-desktop {
+                margin-right: 1rem;
+            }
+        }
+
+        .three {
+            @include tablette-desktop {
+                margin-right: 1rem;
             }
         }
     }     
