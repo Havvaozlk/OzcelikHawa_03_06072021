@@ -3,6 +3,12 @@ header {
     display: flex;
     justify-content: center;
     margin: 1.5rem 0 0.5rem 0;
+    position: relative;
+    .fa-arrow-left {
+        position: absolute;
+        top: 0.5rem;
+        left: 2rem;
+    }
     h1 {
         width: 10rem;
         font-family: 'shrikhandregular';
@@ -11,5 +17,35 @@ header {
             text-decoration: none;
             color: black;
         }
+    }
+}
+
+footer {
+    background-color: $grisfoncé;
+    padding: 1rem 0 1rem 0;
+    h1 {
+        color: white;
+        margin-left: 2.4rem;
+        font-size: larger;
+        font-family: 'shrikhandregular';
+    }
+    ul {
+        list-style-type: none;
+        li {
+            margin-bottom: 0.4rem;
+        }
+        
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+                .fa, .fas {
+                    font-size: x-small;
+                    width: 1.5rem;
+                }
+            }
+        
     }
 }

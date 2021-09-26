@@ -1,0 +1,48 @@
+.nom-restaurant {
+    position: relative;
+    h1 {
+        font-family: 'shrikhandregular', sans-serif;
+    }
+    .coeur1 {
+        position: absolute;
+        top: 0.5rem;
+        right: 2rem;
+        font-size: x-large;
+    }
+    h2 {
+        font-weight: initial;
+        font-size: large;
+    }
+}
+.section-menu_ {
+    padding: 1rem;
+    background-color: $grisclair;
+    .section-menu__type {
+        font-weight: initial;
+        font-size: large;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border: solid $grisclair 1px;
+        background-color: white;
+        border-radius: 16px;
+        padding: 0.5rem 0 0.5rem 0.5rem;
+        margin-bottom: 1rem;
+        box-shadow: 3px 3px 9px $background;
+        h2 {
+            margin: 0.5rem 0 0.5rem 0;
+            font-size: large;  
+        }
+        p {
+            margin: 0;
+        }
+        span {
+            position: absolute;
+            top: 2.8rem;
+            right: 1rem; 
+            font-weight: bold; 
+        }
+    }
+}

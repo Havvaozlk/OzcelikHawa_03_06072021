@@ -5,8 +5,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Roboto";
-  src: url("sass/font/roboto-light.woff2") format("woff2"), url("sass/font/roboto-light.woff") format("woff");
+  font-family: "roboto";
+  src: url("/public/font/roboto-light.woff2") format("woff2"), url("/public/font/roboto-light.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,6 +29,34 @@ header h1 {
 header h1 a {
   text-decoration: none;
   color: black;
+}
+
+footer {
+  background-color: #333232db;
+  padding: 1rem 0 1rem 0;
+}
+footer h1 {
+  color: white;
+  margin-left: 2.4rem;
+  font-size: larger;
+  font-family: "shrikhandregular";
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  margin-bottom: 0.4rem;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+}
+footer ul a:hover {
+  text-decoration: underline;
+}
+footer ul a .fa, footer ul a .fas {
+  font-size: x-small;
+  width: 1.5rem;
 }
 
 .localisation {
@@ -263,34 +291,6 @@ header h1 a {
   .section-restaurants div .three {
     margin-right: 1rem;
   }
-}
-
-footer {
-  background-color: #333232db;
-  padding: 1rem 0 1rem 0;
-}
-footer h1 {
-  color: white;
-  margin-left: 2.4rem;
-  font-size: larger;
-  font-family: "shrikhandregular";
-}
-footer ul {
-  list-style-type: none;
-}
-footer ul li {
-  margin-bottom: 0.4rem;
-}
-footer ul a {
-  color: white;
-  text-decoration: none;
-}
-footer ul a:hover {
-  text-decoration: underline;
-}
-footer ul a .fa, footer ul a .fas {
-  font-size: x-small;
-  width: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
