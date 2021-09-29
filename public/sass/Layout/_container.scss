@@ -1,3 +1,11 @@
+.image {
+    img {
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+    }
+}
+
 .nom-restaurant {
     position: relative;
     h1 {
@@ -14,9 +22,11 @@
         font-size: large;
     }
 }
-.section-menu_ {
+#section-menu_ {
     padding: 1rem;
     background-color: $grisclair;
+    margin-top: -2rem;
+    border-radius: 2.5rem 2.5rem 0 0;
     .section-menu__type {
         font-weight: initial;
         font-size: large;
@@ -44,5 +54,21 @@
             right: 1rem; 
             font-weight: bold; 
         }
+    }
+    .bouton-commander {
+        display: flex;
+        justify-content: center;
+        a {
+            color: white;
+            border: solid transparent 1px;
+            background: linear-gradient(#FF79DA, #9356DC);
+            text-decoration: none;
+            padding: 1rem 2rem 1rem 2rem;
+            border-radius: 3rem;
+            font-weight: bold;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+        
     }
 }
