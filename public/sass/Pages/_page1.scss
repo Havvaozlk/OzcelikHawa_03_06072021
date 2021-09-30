@@ -172,7 +172,10 @@
                     p {
                         margin: 0 0 0 1rem;
                     }
-                    .section-restaurants__coeur {
+                }
+            }
+        }
+                    /*.section-restaurants__coeur {
                         height: 2rem;
                         width: 2rem;
                         font-size: 1.5rem;
@@ -216,7 +219,7 @@
                 right: 0.5rem;
                 display: none; 
             }
-        }
+        }*/
         .one {
             @include tablette-desktop {
                 margin-right: 1rem;

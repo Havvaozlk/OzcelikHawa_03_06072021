@@ -1,3 +1,34 @@
+.section-menu__coeur {
+  transform-origin: bottom;
+  opacity: 1;
+  font-size: 24px;
+}
+.section-menu__coeur .coeur1 {
+  display: inline-block;
+  text-rendering: auto;
+  line-height: 1;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+}
+
+.section-menu__animation {
+  opacity: 0;
+}
+.section-menu__animation:hover {
+  opacity: 1;
+  transition: opacity 2s;
+}
+.section-menu__animation .coeur2 {
+  top: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  font-size: x-large;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @font-face {
   font-family: "shrikhandregular";
   src: url("/public/font/shrikhand-regular-webfont.woff2") format("woff2"), url("/public/font/shrikhand-regular-webfont.woff") format("woff");
@@ -75,15 +106,15 @@ footer ul a .fa, footer ul a .fas {
 
 .nom-restaurant {
   position: relative;
+  /*.coeur1 {
+      position: absolute;
+      top: 0.5rem;
+      right: 2rem;
+      font-size: x-large;
+  }*/
 }
 .nom-restaurant h1 {
   font-family: "shrikhandregular", sans-serif;
-}
-.nom-restaurant .coeur1 {
-  position: absolute;
-  top: 0.5rem;
-  right: 2rem;
-  font-size: x-large;
 }
 .nom-restaurant h2 {
   font-weight: initial;
@@ -266,6 +297,51 @@ footer ul a .fa, footer ul a .fas {
 .section-restaurants div {
   width: 100%;
   overflow-x: auto;
+  /*.section-restaurants__coeur {
+                  height: 2rem;
+                  width: 2rem;
+                  font-size: 1.5rem;
+                  position: absolute;
+                  right: 1.5rem;
+                  top: 1rem;
+                  .coeur1 {
+                      position: relative;
+                      &:hover {
+                          display: none;
+                      }
+                  }
+                  .coeur2 {
+                      position: absolute;
+                      right: 0.5rem;
+                      display: none; 
+                      &:hover{
+                          display: block;
+                          background: linear-gradient(#FF79DA, #9356DC);
+                          -webkit-background-clip: text;
+                          -webkit-text-fill-color: transparent;
+                      }
+                  }
+              }
+
+          }
+      }
+  }
+  .section-restaurants__coeur {
+      height: 2rem;
+      width: 2rem;
+      font-size: 1.5rem;
+      position: absolute;
+      right: 1.5rem;
+      top: 1rem;
+      .coeur1 {
+          position: relative;
+      }
+      .coeur2 {
+          position: absolute;
+          right: 0.5rem;
+          display: none; 
+      }
+  }*/
 }
 @media all and (min-width: 701px) {
   .section-restaurants div {
@@ -321,47 +397,6 @@ footer ul a .fa, footer ul a .fas {
 }
 .section-restaurants div article a div p {
   margin: 0 0 0 1rem;
-}
-.section-restaurants div article a div .section-restaurants__coeur {
-  height: 2rem;
-  width: 2rem;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1.5rem;
-  top: 1rem;
-}
-.section-restaurants div article a div .section-restaurants__coeur .coeur1 {
-  position: relative;
-}
-.section-restaurants div article a div .section-restaurants__coeur .coeur1:hover {
-  display: none;
-}
-.section-restaurants div article a div .section-restaurants__coeur .coeur2 {
-  position: absolute;
-  right: 0.5rem;
-  display: none;
-}
-.section-restaurants div article a div .section-restaurants__coeur .coeur2:hover {
-  display: block;
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.section-restaurants div .section-restaurants__coeur {
-  height: 2rem;
-  width: 2rem;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1.5rem;
-  top: 1rem;
-}
-.section-restaurants div .section-restaurants__coeur .coeur1 {
-  position: relative;
-}
-.section-restaurants div .section-restaurants__coeur .coeur2 {
-  position: absolute;
-  right: 0.5rem;
-  display: none;
 }
 @media all and (min-width: 701px) {
   .section-restaurants div .one {
