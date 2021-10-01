@@ -1,3 +1,34 @@
+.section-menu__coeur {
+  transform-origin: bottom;
+  opacity: 1;
+  font-size: 24px;
+}
+.section-menu__coeur .coeur1 {
+  display: inline-block;
+  text-rendering: auto;
+  line-height: 1;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+}
+
+.section-menu__animation {
+  opacity: 0;
+}
+.section-menu__animation:hover {
+  opacity: 1;
+  transition: opacity 2s;
+}
+.section-menu__animation .coeur2 {
+  top: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  font-size: x-large;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @font-face {
   font-family: "shrikhandregular";
   src: url("/public/font/shrikhand-regular-webfont.woff2") format("woff2"), url("/public/font/shrikhand-regular-webfont.woff") format("woff");
@@ -20,6 +51,14 @@ header {
   display: flex;
   justify-content: center;
   margin: 1.5rem 0 0.5rem 0;
+  position: relative;
+}
+header .fa-arrow-left {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  cursor: pointer;
+  color: black;
 }
 header h1 {
   width: 10rem;
@@ -57,6 +96,79 @@ footer ul a:hover {
 footer ul a .fa, footer ul a .fas {
   font-size: x-small;
   width: 1.5rem;
+}
+
+.image img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.nom-restaurant {
+  position: relative;
+  /*.coeur1 {
+      position: absolute;
+      top: 0.5rem;
+      right: 2rem;
+      font-size: x-large;
+  }*/
+}
+.nom-restaurant h1 {
+  font-family: "shrikhandregular", sans-serif;
+}
+.nom-restaurant h2 {
+  font-weight: initial;
+  font-size: large;
+}
+
+#section-menu_ {
+  padding: 1rem;
+  background-color: #80797912;
+  margin-top: -2rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+}
+#section-menu_ .section-menu__type {
+  font-weight: initial;
+  font-size: large;
+}
+#section-menu_ article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: solid #80797912 1px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 9px #aba9a936;
+}
+#section-menu_ article h2 {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: large;
+}
+#section-menu_ article p {
+  margin: 0;
+}
+#section-menu_ article span {
+  position: absolute;
+  top: 2.8rem;
+  right: 1rem;
+  font-weight: bold;
+}
+#section-menu_ .bouton-commander {
+  display: flex;
+  justify-content: center;
+}
+#section-menu_ .bouton-commander a {
+  color: white;
+  border: solid transparent 1px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  text-decoration: none;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .localisation {
@@ -185,6 +297,51 @@ footer ul a .fa, footer ul a .fas {
 .section-restaurants div {
   width: 100%;
   overflow-x: auto;
+  /*.section-restaurants__coeur {
+                  height: 2rem;
+                  width: 2rem;
+                  font-size: 1.5rem;
+                  position: absolute;
+                  right: 1.5rem;
+                  top: 1rem;
+                  .coeur1 {
+                      position: relative;
+                      &:hover {
+                          display: none;
+                      }
+                  }
+                  .coeur2 {
+                      position: absolute;
+                      right: 0.5rem;
+                      display: none; 
+                      &:hover{
+                          display: block;
+                          background: linear-gradient(#FF79DA, #9356DC);
+                          -webkit-background-clip: text;
+                          -webkit-text-fill-color: transparent;
+                      }
+                  }
+              }
+
+          }
+      }
+  }
+  .section-restaurants__coeur {
+      height: 2rem;
+      width: 2rem;
+      font-size: 1.5rem;
+      position: absolute;
+      right: 1.5rem;
+      top: 1rem;
+      .coeur1 {
+          position: relative;
+      }
+      .coeur2 {
+          position: absolute;
+          right: 0.5rem;
+          display: none; 
+      }
+  }*/
 }
 @media all and (min-width: 701px) {
   .section-restaurants div {
@@ -224,63 +381,22 @@ footer ul a .fa, footer ul a .fas {
   color: #265549;
   border-radius: 4px;
 }
-.section-restaurants div article a div {
+.section-restaurants div article a .section-restaurants__article {
   height: 5rem;
   position: relative;
 }
 @media all and (min-width: 701px) {
-  .section-restaurants div article a div {
+  .section-restaurants div article a .section-restaurants__article {
     flex-direction: column;
   }
 }
-.section-restaurants div article a div h2 {
+.section-restaurants div article a .section-restaurants__article h2 {
   margin: 1rem 0 0.3rem 1rem;
   font-size: 1.3em;
   background-color: white;
 }
-.section-restaurants div article a div p {
+.section-restaurants div article a .section-restaurants__article p {
   margin: 0 0 0 1rem;
-}
-.section-restaurants div article a div .section-restaurants__coeur {
-  height: 2rem;
-  width: 2rem;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1.5rem;
-  top: 1rem;
-}
-.section-restaurants div article a div .section-restaurants__coeur .coeur1 {
-  position: relative;
-}
-.section-restaurants div article a div .section-restaurants__coeur .coeur1:hover {
-  display: none;
-}
-.section-restaurants div article a div .section-restaurants__coeur .coeur2 {
-  position: absolute;
-  right: 0.5rem;
-  display: none;
-}
-.section-restaurants div article a div .section-restaurants__coeur .coeur2:hover {
-  display: block;
-  background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.section-restaurants div .section-restaurants__coeur {
-  height: 2rem;
-  width: 2rem;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1.5rem;
-  top: 1rem;
-}
-.section-restaurants div .section-restaurants__coeur .coeur1 {
-  position: relative;
-}
-.section-restaurants div .section-restaurants__coeur .coeur2 {
-  position: absolute;
-  right: 0.5rem;
-  display: none;
 }
 @media all and (min-width: 701px) {
   .section-restaurants div .one {

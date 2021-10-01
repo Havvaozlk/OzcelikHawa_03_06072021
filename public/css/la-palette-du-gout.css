@@ -381,21 +381,21 @@ footer ul a .fa, footer ul a .fas {
   color: #265549;
   border-radius: 4px;
 }
-.section-restaurants div article a div {
+.section-restaurants div article a .section-restaurants__article {
   height: 5rem;
   position: relative;
 }
 @media all and (min-width: 701px) {
-  .section-restaurants div article a div {
+  .section-restaurants div article a .section-restaurants__article {
     flex-direction: column;
   }
 }
-.section-restaurants div article a div h2 {
+.section-restaurants div article a .section-restaurants__article h2 {
   margin: 1rem 0 0.3rem 1rem;
   font-size: 1.3em;
   background-color: white;
 }
-.section-restaurants div article a div p {
+.section-restaurants div article a .section-restaurants__article p {
   margin: 0 0 0 1rem;
 }
 @media all and (min-width: 701px) {
