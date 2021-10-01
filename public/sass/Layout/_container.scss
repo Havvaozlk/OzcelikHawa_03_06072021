@@ -1,13 +1,12 @@
 .image {
     img {
         width: 100%;
-        height: 16rem;
+        height: 18rem;
         object-fit: cover;
     }
 }
 
-.nom-restaurant {
-    position: relative;
+
     h1 {
         font-family: 'shrikhandregular', sans-serif;
     }
@@ -16,12 +15,21 @@
         font-weight: initial;
         font-size: large;
     }
-}
+
 #section-menu_ {
-    padding: 1rem;
     background-color: $grisclair;
-    margin-top: -2rem;
-    border-radius: 2.5rem 2.5rem 0 0;
+    .nom-restaurant {
+        position: relative;
+        margin-top: -2rem;
+        border-radius: 2.5rem 2.5rem 0 0;
+        padding:2rem 2rem 0 2rem; 
+        background-color: #f2f2f2;
+        .fa-heart {
+            margin-top: 3rem;
+        } 
+    }
+    .main {
+        padding: 0 2rem 2rem 2rem;
     .section-menu__type {
         font-weight: initial;
         font-size: large;
@@ -78,7 +86,10 @@
             font-weight: bold;
             margin-top: 3rem;
             margin-bottom: 2rem;
+            box-shadow: 3px 3px 9px $background;
+        
         }
         
+    }
     }
 }

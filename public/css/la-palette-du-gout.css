@@ -100,43 +100,51 @@ footer ul a .fa, footer ul a .fas {
 
 .image img {
   width: 100%;
-  height: 16rem;
+  height: 18rem;
   object-fit: cover;
 }
 
-.nom-restaurant {
-  position: relative;
-}
-.nom-restaurant h1 {
+h1 {
   font-family: "shrikhandregular", sans-serif;
 }
-.nom-restaurant h2 {
+
+h2 {
   font-weight: initial;
   font-size: large;
 }
 
 #section-menu_ {
-  padding: 1rem;
-  background-color: #80797912;
+  background-color: #f2f2f2;
+}
+#section-menu_ .nom-restaurant {
+  position: relative;
   margin-top: -2rem;
   border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2rem 2rem 0 2rem;
+  background-color: #f2f2f2;
 }
-#section-menu_ .section-menu__type {
+#section-menu_ .nom-restaurant .fa-heart {
+  margin-top: 3rem;
+}
+#section-menu_ .main {
+  padding: 0 2rem 2rem 2rem;
+}
+#section-menu_ .main .section-menu__type {
   font-weight: initial;
   font-size: large;
   margin-bottom: 0.3rem;
   margin-top: 2.5rem;
 }
-#section-menu_ .section-menu__soulignement {
+#section-menu_ .main .section-menu__soulignement {
   border-top: solid #99E2D0;
   width: 3rem;
   margin-bottom: 1rem;
 }
-#section-menu_ .section-menu__article {
+#section-menu_ .main .section-menu__article {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: solid #80797912 1px;
+  border: solid #f2f2f2 1px;
   background-color: white;
   border-radius: 16px;
   padding: 0.5rem 0 0.5rem 0.5rem;
@@ -144,31 +152,31 @@ footer ul a .fa, footer ul a .fas {
   box-shadow: 3px 3px 9px #aba9a936;
   cursor: pointer;
 }
-#section-menu_ .section-menu__article h2 {
+#section-menu_ .main .section-menu__article h2 {
   margin: 0.5rem 0 0.5rem 0;
   font-size: large;
   font-weight: bold;
   margin-bottom: 0.3rem;
 }
-#section-menu_ .section-menu__article .section-menu__soulignement {
+#section-menu_ .main .section-menu__article .section-menu__soulignement {
   border-top: solid #99E2D0;
   width: 3rem;
   margin-bottom: 1rem;
 }
-#section-menu_ .section-menu__article p {
+#section-menu_ .main .section-menu__article p {
   margin: 0;
 }
-#section-menu_ .section-menu__article span {
+#section-menu_ .main .section-menu__article span {
   position: absolute;
   top: 2.8rem;
   right: 1rem;
   font-weight: bold;
 }
-#section-menu_ .bouton-commander {
+#section-menu_ .main .bouton-commander {
   display: flex;
   justify-content: center;
 }
-#section-menu_ .bouton-commander a {
+#section-menu_ .main .bouton-commander a {
   color: white;
   border: solid transparent 1px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -178,6 +186,7 @@ footer ul a .fa, footer ul a .fas {
   font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  box-shadow: 3px 3px 9px #aba9a936;
 }
 
 .localisation {
@@ -198,7 +207,7 @@ footer ul a .fa, footer ul a .fas {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #80797912;
+  background-color: #f2f2f2;
 }
 .section-explorer h1 {
   margin: 3rem 3rem 1.5rem 3rem;
@@ -244,7 +253,7 @@ footer ul a .fa, footer ul a .fas {
 }
 .section-menu div div {
   border-radius: 22px;
-  background-color: #80797912;
+  background-color: #f2f2f2;
   width: 22rem;
   height: 4rem;
   display: flex;
@@ -293,7 +302,7 @@ footer ul a .fa, footer ul a .fas {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  background-color: #80797912;
+  background-color: #f2f2f2;
   align-items: center;
   padding: 1.5rem;
 }
