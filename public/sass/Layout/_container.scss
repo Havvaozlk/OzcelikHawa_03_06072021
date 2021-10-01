@@ -11,12 +11,7 @@
     h1 {
         font-family: 'shrikhandregular', sans-serif;
     }
-    /*.coeur1 {
-        position: absolute;
-        top: 0.5rem;
-        right: 2rem;
-        font-size: x-large;
-    }*/
+  
     h2 {
         font-weight: initial;
         font-size: large;
@@ -30,8 +25,15 @@
     .section-menu__type {
         font-weight: initial;
         font-size: large;
+        margin-bottom: 0.3rem;
+        margin-top: 2.5rem;
     }
-    article {
+    .section-menu__soulignement {
+        border-top: solid #99E2D0;
+        width: 3rem;
+        margin-bottom: 1rem;
+        }
+    .section-menu__article {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -41,9 +43,17 @@
         padding: 0.5rem 0 0.5rem 0.5rem;
         margin-bottom: 1rem;
         box-shadow: 3px 3px 9px $background;
+        cursor: pointer;
         h2 {
             margin: 0.5rem 0 0.5rem 0;
             font-size: large;  
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        .section-menu__soulignement {
+        border-top: solid #99E2D0;
+        width: 3rem;
+        margin-bottom: 1rem;
         }
         p {
             margin: 0;

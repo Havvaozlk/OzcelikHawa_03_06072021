@@ -106,12 +106,6 @@ footer ul a .fa, footer ul a .fas {
 
 .nom-restaurant {
   position: relative;
-  /*.coeur1 {
-      position: absolute;
-      top: 0.5rem;
-      right: 2rem;
-      font-size: x-large;
-  }*/
 }
 .nom-restaurant h1 {
   font-family: "shrikhandregular", sans-serif;
@@ -130,8 +124,15 @@ footer ul a .fa, footer ul a .fas {
 #section-menu_ .section-menu__type {
   font-weight: initial;
   font-size: large;
+  margin-bottom: 0.3rem;
+  margin-top: 2.5rem;
 }
-#section-menu_ article {
+#section-menu_ .section-menu__soulignement {
+  border-top: solid #99E2D0;
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+#section-menu_ .section-menu__article {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -141,15 +142,23 @@ footer ul a .fa, footer ul a .fas {
   padding: 0.5rem 0 0.5rem 0.5rem;
   margin-bottom: 1rem;
   box-shadow: 3px 3px 9px #aba9a936;
+  cursor: pointer;
 }
-#section-menu_ article h2 {
+#section-menu_ .section-menu__article h2 {
   margin: 0.5rem 0 0.5rem 0;
   font-size: large;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
 }
-#section-menu_ article p {
+#section-menu_ .section-menu__article .section-menu__soulignement {
+  border-top: solid #99E2D0;
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+#section-menu_ .section-menu__article p {
   margin: 0;
 }
-#section-menu_ article span {
+#section-menu_ .section-menu__article span {
   position: absolute;
   top: 2.8rem;
   right: 1rem;
