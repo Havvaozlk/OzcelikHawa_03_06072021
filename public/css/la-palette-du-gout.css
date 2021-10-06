@@ -433,8 +433,15 @@ h2 {
     width: 48%;
   }
 }
-.section-restaurants div article:hover {
-  transform: scale(1.02);
+@media screen and (min-width: 1101px) {
+  .section-restaurants div article:hover {
+    transform: scale(1.02);
+  }
+}
+@media all and (min-width: 701px) {
+  .section-restaurants div article:hover {
+    transform: scale(1.02);
+  }
 }
 .section-restaurants div article a {
   color: black;

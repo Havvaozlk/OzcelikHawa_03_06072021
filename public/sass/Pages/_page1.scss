@@ -148,7 +148,12 @@
                 width: 48%;
             }
             &:hover {
+            @include version-desktop {
                 transform: scale(1.02);
+            }
+            @include tablette-desktop {
+                transform: scale(1.02);
+            }
             }
             
             a {
