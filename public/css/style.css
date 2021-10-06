@@ -29,20 +29,67 @@
   -webkit-text-fill-color: transparent;
 }
 
-@font-face {
-  font-family: "shrikhandregular";
-  src: url("/public/font/shrikhand-regular-webfont.woff2") format("woff2"), url("/public/font/shrikhand-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.section-menu__article:hover .section-menu__article__animation {
+  transform: translateX(-100%);
+  visibility: visible;
+  -webkit-transition: all 0.5s ease-in;
 }
-@font-face {
-  font-family: "roboto";
-  src: url("/public/font/roboto-light.woff2") format("woff2"), url("/public/font/roboto-light.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.section-menu__article:hover .section-menu__article__description {
+  /*margin-right: 9rem;*/
+  margin-right: 0rem;
 }
+.section-menu__article:hover .div-check-circle {
+  transform: rotate(-380deg);
+  transition-duration: 1s;
+}
+.section-menu__article .section-menu__article__description {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.section-menu__article:hover .section-menu__article__description {
+  width: 75%;
+  margin-right: 2rem;
+}
+.section-menu__article .section-menu__article__animation {
+  background: #99E2D0;
+  width: 20%;
+  position: absolute;
+  top: 0;
+  /*right: 0;*/
+  visibility: hidden;
+  left: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 16px 16px 0;
+}
+.section-menu__article .section-menu__article__animation .fa-check-circle {
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+}
+
+/*@font-face {
+    font-family: 'shrikhandregular';
+    src: url('/public/font/shrikhand-regular-webfont.woff2') format('woff2'),
+         url('/public/font/shrikhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('/public/font/roboto-light.woff2') format('woff2'),
+         url('/public/font/roboto-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
 body {
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -62,7 +109,7 @@ header .fa-arrow-left {
 }
 header h1 {
   width: 10rem;
-  font-family: "shrikhandregular";
+  font-family: "Shrikhand", cursive;
   margin: 0;
 }
 header h1 a {
@@ -78,7 +125,7 @@ footer h1 {
   color: white;
   margin-left: 2.4rem;
   font-size: larger;
-  font-family: "shrikhandregular";
+  font-family: "Shrikhand", cursive;
 }
 footer ul {
   list-style-type: none;
@@ -100,66 +147,80 @@ footer ul a .fa, footer ul a .fas {
 
 .image img {
   width: 100%;
-  height: 16rem;
+  height: 18rem;
   object-fit: cover;
 }
 
-.nom-restaurant {
-  position: relative;
-  /*.coeur1 {
-      position: absolute;
-      top: 0.5rem;
-      right: 2rem;
-      font-size: x-large;
-  }*/
-}
-.nom-restaurant h1 {
-  font-family: "shrikhandregular", sans-serif;
-}
-.nom-restaurant h2 {
+h2 {
   font-weight: initial;
   font-size: large;
 }
 
 #section-menu_ {
-  padding: 1rem;
-  background-color: #80797912;
+  background-color: #f2f2f2;
+}
+#section-menu_ .nom-restaurant {
+  position: relative;
   margin-top: -2rem;
   border-radius: 2.5rem 2.5rem 0 0;
+  padding: 2rem 2rem 0 2rem;
+  background-color: #f2f2f2;
 }
-#section-menu_ .section-menu__type {
+#section-menu_ .nom-restaurant .fa-heart {
+  margin-top: 3rem;
+}
+#section-menu_ .main {
+  padding: 0 2rem 2rem 2rem;
+}
+#section-menu_ .main .section-menu__type {
   font-weight: initial;
   font-size: large;
+  margin-bottom: 0.3rem;
+  margin-top: 2.5rem;
 }
-#section-menu_ article {
+#section-menu_ .main .section-menu__soulignement {
+  border-top: solid #99E2D0;
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+#section-menu_ .main .section-menu__article {
   display: flex;
   flex-direction: column;
   position: relative;
-  border: solid #80797912 1px;
+  border: solid #f2f2f2 0px;
   background-color: white;
   border-radius: 16px;
   padding: 0.5rem 0 0.5rem 0.5rem;
   margin-bottom: 1rem;
   box-shadow: 3px 3px 9px #aba9a936;
+  cursor: pointer;
 }
-#section-menu_ article h2 {
+#section-menu_ .main .section-menu__article h2 {
   margin: 0.5rem 0 0.5rem 0;
   font-size: large;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
 }
-#section-menu_ article p {
+#section-menu_ .main .section-menu__article .section-menu__soulignement {
+  border-top: solid #99E2D0;
+  width: 3rem;
+  margin-bottom: 1rem;
+}
+#section-menu_ .main .section-menu__article p {
   margin: 0;
 }
-#section-menu_ article span {
-  position: absolute;
+#section-menu_ .main .section-menu__article span {
+  /*position: absolute;
   top: 2.8rem;
-  right: 1rem;
+  right: 1rem;*/
   font-weight: bold;
+  /*margin-right: 2rem;*/
 }
-#section-menu_ .bouton-commander {
+#section-menu_ .main .bouton-commander {
   display: flex;
   justify-content: center;
 }
-#section-menu_ .bouton-commander a {
+#section-menu_ .main .bouton-commander a {
   color: white;
   border: solid transparent 1px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -169,6 +230,7 @@ footer ul a .fa, footer ul a .fas {
   font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 2rem;
+  box-shadow: 3px 3px 9px #aba9a936;
 }
 
 .localisation {
@@ -189,7 +251,7 @@ footer ul a .fa, footer ul a .fas {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #80797912;
+  background-color: #f2f2f2;
 }
 .section-explorer h1 {
   margin: 3rem 3rem 1.5rem 3rem;
@@ -210,6 +272,10 @@ footer ul a .fa, footer ul a .fas {
   width: 13rem;
   justify-content: center;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+.section-explorer a:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s;
 }
 
 .section-menu h1 {
@@ -235,7 +301,7 @@ footer ul a .fa, footer ul a .fas {
 }
 .section-menu div div {
   border-radius: 22px;
-  background-color: #80797912;
+  background-color: #f2f2f2;
   width: 22rem;
   height: 4rem;
   display: flex;
@@ -284,7 +350,7 @@ footer ul a .fa, footer ul a .fas {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  background-color: #80797912;
+  background-color: #f2f2f2;
   align-items: center;
   padding: 1.5rem;
 }
@@ -367,6 +433,9 @@ footer ul a .fa, footer ul a .fas {
     width: 48%;
   }
 }
+.section-restaurants div article:hover {
+  transform: scale(1.02);
+}
 .section-restaurants div article a {
   color: black;
   text-decoration: none;
@@ -394,6 +463,7 @@ footer ul a .fa, footer ul a .fas {
   margin: 1rem 0 0.3rem 1rem;
   font-size: 1.3em;
   background-color: white;
+  font-weight: bold;
 }
 .section-restaurants div article a .section-restaurants__article p {
   margin: 0 0 0 1rem;

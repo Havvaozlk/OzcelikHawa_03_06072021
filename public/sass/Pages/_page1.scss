@@ -37,6 +37,10 @@
         width: 13rem;
         justify-content: center;
         box-shadow: .25rem .25rem 10px $ombres;
+        &:hover {
+            transform: scale(1.1);
+            transition: transform 0.1s;
+        }
     }
 }
 
@@ -143,6 +147,9 @@
             @include tablette-desktop {
                 width: 48%;
             }
+            &:hover {
+                transform: scale(1.02);
+            }
             
             a {
                 color: black;
@@ -168,6 +175,7 @@
                         margin: 1rem 0 0.3rem 1rem;
                         font-size: 1.3em;
                         background-color: white ;
+                        font-weight: bold;
                     }
                     p {
                         margin: 0 0 0 1rem;
