@@ -90,6 +90,10 @@
             margin-top: 3rem;
             margin-bottom: 2rem;
             box-shadow: 3px 3px 9px $background;
+            &:hover {
+                box-shadow: .25rem .25rem 10px rgba(0,0,0,.5);
+                transition-duration: .25s;
+            }
         
         }
         
