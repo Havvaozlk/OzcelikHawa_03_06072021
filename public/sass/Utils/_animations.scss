@@ -46,12 +46,11 @@
     .section-menu__article__description {
         display: flex;
         justify-content: space-between;
-        width: 90%;
+        width: 95%;
         
     }
     &:hover .section-menu__article__description {
         width: 75%;
-        margin-right: 2rem;
     }
 .section-menu__article__animation {
     background: $vert;
