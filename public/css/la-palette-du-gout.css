@@ -210,6 +210,9 @@ h2 {
 }
 #section-menu_ .main .section-menu__article p {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #section-menu_ .main .section-menu__article span {
   /*position: absolute;
