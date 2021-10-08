@@ -93,6 +93,7 @@
             &:hover {
                 box-shadow: .25rem .25rem 10px rgba(0,0,0,.5);
                 transition-duration: .25s;
+                filter: brightness(1.1);
             }
         
         }

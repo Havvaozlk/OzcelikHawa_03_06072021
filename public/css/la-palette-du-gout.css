@@ -240,6 +240,7 @@ h2 {
 #section-menu_ .main .bouton-commander a:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
   transition-duration: 0.25s;
+  filter: brightness(1.1);
 }
 
 .localisation {
@@ -285,6 +286,7 @@ h2 {
 .section-explorer a:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(146, 11, 11, 0.5);
   transition-duration: 0.25s;
+  filter: brightness(1.1);
 }
 
 .section-menu h1 {
