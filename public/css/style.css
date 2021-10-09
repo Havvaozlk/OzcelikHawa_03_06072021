@@ -30,9 +30,11 @@
 }
 
 .section-menu__article:hover .section-menu__article__animation {
-  transform: translateX(-100%);
+  /*transform: translateX(-100%);
   visibility: visible;
-  -webkit-transition: all 0.5s ease-in;
+  -webkit-transition: all .5s ease-in;*/
+  margin-right: 0rem;
+  width: 6rem;
 }
 .section-menu__article:hover .section-menu__article__description {
   /*margin-right: 9rem;*/
@@ -45,25 +47,32 @@
 .section-menu__article .section-menu__article__description {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
 }
 .section-menu__article:hover .section-menu__article__description {
   width: 75%;
-  margin-right: 2rem;
 }
 .section-menu__article .section-menu__article__animation {
-  background: #99E2D0;
+  /*background: $vert;
   width: 20%;
   position: absolute;
   top: 0;
-  /*right: 0;*/
+  right: 0;
   visibility: hidden;
   left: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0 16px 16px 0;
+  border-radius: 0 16px 16px 0;*/
+  background-color: #99e2d0;
+  margin: -1rem -5rem -1rem 1rem;
+  margin-right: -5rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
 }
 .section-menu__article .section-menu__article__animation .fa-check-circle {
   font-size: x-large;
@@ -194,6 +203,9 @@ h2 {
   margin-bottom: 1rem;
   box-shadow: 3px 3px 9px #aba9a936;
   cursor: pointer;
+  /*&:hover .section-menu__article__description {
+      width: 75%;
+  }*/
 }
 #section-menu_ .main .section-menu__article h2 {
   margin: 0.5rem 0 0.5rem 0;
@@ -208,6 +220,9 @@ h2 {
 }
 #section-menu_ .main .section-menu__article p {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #section-menu_ .main .section-menu__article span {
   /*position: absolute;
@@ -231,6 +246,11 @@ h2 {
   margin-top: 3rem;
   margin-bottom: 2rem;
   box-shadow: 3px 3px 9px #aba9a936;
+}
+#section-menu_ .main .bouton-commander a:hover {
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.25s;
+  filter: brightness(1.1);
 }
 
 .localisation {
@@ -274,8 +294,9 @@ h2 {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 .section-explorer a:hover {
-  transform: scale(1.1);
-  transition: transform 0.1s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.25s;
+  filter: brightness(1.1);
 }
 
 .section-menu h1 {
