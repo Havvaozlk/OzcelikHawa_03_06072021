@@ -17,8 +17,10 @@
     flex-direction: column;
     align-items: center;
     background-color: $grisclair;
-    h1 {
+    h2 {
         margin: 3rem 3rem 1.5rem 3rem;
+        font-size: x-large;
+        font-weight: bold;
     }
     p {
         margin: 0 2rem 2rem 2rem;
@@ -46,8 +48,10 @@
 }
 
 .section-menu {
-    h1 {
-        margin: 2rem 0 1rem 1rem;
+    h2 {
+        margin: 2rem 0 1rem 2rem;
+        font-size: x-large;
+        font-weight: bold;
     }
     div {
         display: flex;
@@ -125,6 +129,8 @@
         display: flex;
         justify-content: flex-start;
         width: 100%;
+        font-size: x-large;
+        font-weight: bold;
     }
     div {
         width: 100%;

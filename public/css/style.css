@@ -30,11 +30,9 @@
 }
 
 .section-menu__article:hover .section-menu__article__animation {
-  /*transform: translateX(-100%);
+  transform: translateX(-100%);
   visibility: visible;
-  -webkit-transition: all .5s ease-in;*/
-  margin-right: 0rem;
-  width: 6rem;
+  -webkit-transition: all 0.5s ease-in;
 }
 .section-menu__article:hover .section-menu__article__description {
   /*margin-right: 9rem;*/
@@ -53,7 +51,7 @@
   width: 75%;
 }
 .section-menu__article .section-menu__article__animation {
-  /*background: $vert;
+  background: #99E2D0;
   width: 20%;
   position: absolute;
   top: 0;
@@ -64,15 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0 16px 16px 0;*/
-  background-color: #99e2d0;
-  margin: -1rem -5rem -1rem 1rem;
-  margin-right: -5rem;
-  width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.5s;
+  border-radius: 0 16px 16px 0;
 }
 .section-menu__article .section-menu__article__animation .fa-check-circle {
   font-size: x-large;
@@ -100,6 +90,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -174,6 +165,11 @@ h2 {
   border-radius: 2.5rem 2.5rem 0 0;
   padding: 2rem 2rem 0 2rem;
   background-color: #f2f2f2;
+}
+#section-menu_ .nom-restaurant h2 {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "shrikhand", cursive;
 }
 #section-menu_ .nom-restaurant .fa-heart {
   margin-top: 3rem;
@@ -273,8 +269,10 @@ h2 {
   align-items: center;
   background-color: #f2f2f2;
 }
-.section-explorer h1 {
+.section-explorer h2 {
   margin: 3rem 3rem 1.5rem 3rem;
+  font-size: x-large;
+  font-weight: bold;
 }
 .section-explorer p {
   margin: 0 2rem 2rem 2rem;
@@ -299,8 +297,10 @@ h2 {
   filter: brightness(1.1);
 }
 
-.section-menu h1 {
-  margin: 2rem 0 1rem 1rem;
+.section-menu h2 {
+  margin: 2rem 0 1rem 2rem;
+  font-size: x-large;
+  font-weight: bold;
 }
 .section-menu div {
   display: flex;
@@ -380,6 +380,8 @@ h2 {
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  font-size: x-large;
+  font-weight: bold;
 }
 .section-restaurants div {
   width: 100%;

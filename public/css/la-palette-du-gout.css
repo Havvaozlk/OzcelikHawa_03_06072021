@@ -166,6 +166,11 @@ h2 {
   padding: 2rem 2rem 0 2rem;
   background-color: #f2f2f2;
 }
+#section-menu_ .nom-restaurant h2 {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "shrikhand", cursive;
+}
 #section-menu_ .nom-restaurant .fa-heart {
   margin-top: 3rem;
 }
@@ -264,8 +269,10 @@ h2 {
   align-items: center;
   background-color: #f2f2f2;
 }
-.section-explorer h1 {
+.section-explorer h2 {
   margin: 3rem 3rem 1.5rem 3rem;
+  font-size: x-large;
+  font-weight: bold;
 }
 .section-explorer p {
   margin: 0 2rem 2rem 2rem;
@@ -290,8 +297,10 @@ h2 {
   filter: brightness(1.1);
 }
 
-.section-menu h1 {
-  margin: 2rem 0 1rem 1rem;
+.section-menu h2 {
+  margin: 2rem 0 1rem 2rem;
+  font-size: x-large;
+  font-weight: bold;
 }
 .section-menu div {
   display: flex;
@@ -371,6 +380,8 @@ h2 {
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  font-size: x-large;
+  font-weight: bold;
 }
 .section-restaurants div {
   width: 100%;
