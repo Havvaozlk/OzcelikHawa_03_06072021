@@ -114,14 +114,11 @@
 @keyframes scale {
   0% {
     opacity: 0;
-    transform: scale(0);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(105%);
+    transform: translateY(10px);
   }
   100% {
-    transform: scale(100%);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /*@font-face {
