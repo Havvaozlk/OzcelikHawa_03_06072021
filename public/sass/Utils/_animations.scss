@@ -7,7 +7,7 @@
         text-rendering: auto;
         line-height: 1;
         position: absolute;
-        top: 0.5rem;
+        top: 13.5rem;
         right: 2rem;
     }
 }
@@ -20,23 +20,26 @@
     }
 
     .coeur2 {
-        top: 0.5rem;
+        top: 13.5rem;
         position: absolute;
         right: 2rem;
         font-size: x-large;
         background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        cursor: pointer;
     }
 }
 .section-menu__article {
+    &:hover {
+        overflow: hidden;
+    }
     &:hover .section-menu__article__animation {
         transform: translateX(-100%);
         visibility: visible;
         -webkit-transition: all .5s ease-in;
     }
     &:hover .section-menu__article__description {
-        /*margin-right: 9rem;*/ 
         margin-right: 0rem;
     }
     &:hover .div-check-circle {

@@ -29,13 +29,15 @@
   -webkit-text-fill-color: transparent;
 }
 
+.section-menu__article:hover {
+  overflow: hidden;
+}
 .section-menu__article:hover .section-menu__article__animation {
   transform: translateX(-100%);
   visibility: visible;
   -webkit-transition: all 0.5s ease-in;
 }
 .section-menu__article:hover .section-menu__article__description {
-  /*margin-right: 9rem;*/
   margin-right: 0rem;
 }
 .section-menu__article:hover .div-check-circle {
