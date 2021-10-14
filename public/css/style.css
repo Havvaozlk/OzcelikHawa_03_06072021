@@ -8,6 +8,14 @@
   text-rendering: auto;
   line-height: 1;
   position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+}
+.section-menu__coeur .coeuraccueil1 {
+  display: inline-block;
+  text-rendering: auto;
+  line-height: 1;
+  position: absolute;
   top: 13.5rem;
   right: 2rem;
 }
@@ -20,6 +28,16 @@
   transition: opacity 2s;
 }
 .section-menu__animation .coeur2 {
+  top: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  font-size: x-large;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.section-menu__animation .coeuraccueil2 {
   top: 13.5rem;
   position: absolute;
   right: 2rem;
