@@ -139,23 +139,6 @@
     transform: translateY(0);
   }
 }
-/*@font-face {
-    font-family: 'shrikhandregular';
-    src: url('/public/font/shrikhand-regular-webfont.woff2') format('woff2'),
-         url('/public/font/shrikhand-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url('/public/font/roboto-light.woff2') format('woff2'),
-         url('/public/font/roboto-light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}*/
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -277,9 +260,6 @@ h2 {
   margin-bottom: 1rem;
   box-shadow: 3px 3px 9px #aba9a936;
   cursor: pointer;
-  /*&:hover .section-menu__article__description {
-      width: 75%;
-  }*/
 }
 #section-menu_ .main .section-menu__article h2 {
   margin: 0.5rem 0 0.5rem 0;
@@ -299,11 +279,7 @@ h2 {
   overflow: hidden;
 }
 #section-menu_ .main .section-menu__article span {
-  /*position: absolute;
-  top: 2.8rem;
-  right: 1rem;*/
   font-weight: bold;
-  /*margin-right: 2rem;*/
 }
 #section-menu_ .main .bouton-commander {
   display: flex;
@@ -464,51 +440,6 @@ h2 {
 .section-restaurants div {
   width: 100%;
   overflow-x: auto;
-  /*.section-restaurants__coeur {
-                  height: 2rem;
-                  width: 2rem;
-                  font-size: 1.5rem;
-                  position: absolute;
-                  right: 1.5rem;
-                  top: 1rem;
-                  .coeur1 {
-                      position: relative;
-                      &:hover {
-                          display: none;
-                      }
-                  }
-                  .coeur2 {
-                      position: absolute;
-                      right: 0.5rem;
-                      display: none; 
-                      &:hover{
-                          display: block;
-                          background: linear-gradient(#FF79DA, #9356DC);
-                          -webkit-background-clip: text;
-                          -webkit-text-fill-color: transparent;
-                      }
-                  }
-              }
-
-          }
-      }
-  }
-  .section-restaurants__coeur {
-      height: 2rem;
-      width: 2rem;
-      font-size: 1.5rem;
-      position: absolute;
-      right: 1.5rem;
-      top: 1rem;
-      .coeur1 {
-          position: relative;
-      }
-      .coeur2 {
-          position: absolute;
-          right: 0.5rem;
-          display: none; 
-      }
-  }*/
 }
 @media all and (min-width: 701px) {
   .section-restaurants div {

@@ -195,51 +195,7 @@
                 }
             }
         }
-                    /*.section-restaurants__coeur {
-                        height: 2rem;
-                        width: 2rem;
-                        font-size: 1.5rem;
-                        position: absolute;
-                        right: 1.5rem;
-                        top: 1rem;
-                        .coeur1 {
-                            position: relative;
-                            &:hover {
-                                display: none;
-                            }
-                        }
-                        .coeur2 {
-                            position: absolute;
-                            right: 0.5rem;
-                            display: none; 
-                            &:hover{
-                                display: block;
-                                background: linear-gradient(#FF79DA, #9356DC);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                            }
-                        }
-                    }
                     
-                }
-            }
-        }
-        .section-restaurants__coeur {
-            height: 2rem;
-            width: 2rem;
-            font-size: 1.5rem;
-            position: absolute;
-            right: 1.5rem;
-            top: 1rem;
-            .coeur1 {
-                position: relative;
-            }
-            .coeur2 {
-                position: absolute;
-                right: 0.5rem;
-                display: none; 
-            }
-        }*/
         .one {
             @include tablette-desktop {
                 margin-right: 1rem;
