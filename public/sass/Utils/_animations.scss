@@ -4,8 +4,8 @@
     font-size: 24px;
     .coeur1 {
         display: inline-block;
-        text-rendering: auto;
-        line-height: 1;
+        /*text-rendering: auto;
+        line-height: 1;*/
         position: absolute;
         top: 0.5rem;
         right: 2rem;
@@ -24,7 +24,7 @@
     opacity: 0;
     &:hover {
         opacity: 1;
-        transition: opacity 2s;
+        transition: opacity 1s;
     }
 
     .coeur2 {
