@@ -55,7 +55,7 @@
     &:hover .section-menu__article__animation {
         transform: translateX(-100%);
         visibility: visible;
-        -webkit-transition: all .5s ease-in;
+        transition: all .5s ease-in;
     }
     &:hover .section-menu__article__description {
         margin-right: 0rem;

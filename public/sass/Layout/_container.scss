@@ -15,13 +15,13 @@
 #section-menu_ {
     background-color: $grisclair;
     .column1 {
-        animation: scale 1s cubic-bezier(0.5, 0.5, 0.4, 1.2) 0ms 1;
+        animation: scale 2s cubic-bezier(0.5, 0.5, 0.4, 1.2) 0ms 1;
     }
     .column2 {
-        animation: scale 1s cubic-bezier(0.5, 0.5, 0.4, 1.2) 0.2s 1;
+        animation: scale 2s cubic-bezier(0.5, 0.5, 0.4, 1.2) 0.2s 1;
     }
     .column3 {
-        animation: scale 1s cubic-bezier(0.5, 0.5, 0.4, 1.2) 0.4s 1;
+        animation: scale 2s cubic-bezier(0.5, 0.5, 0.4, 1.2) 0.4s 1;
     }
     .nom-restaurant {
         position: relative;
